@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>v TV</title>
-  </head>
-  <body class="bg-vtv-black text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>VTV - Streaming Premium</title>
+    <meta name="theme-color" content="#00CEC8">
+    <meta name="description" content="Plateforme de streaming VTV. Films, Séries et Documentaires.">
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-neutral-950 text-white font-inter overflow-x-hidden selection:bg-[#00CEC8] selection:text-black">
+    
+    <div id="app" class="min-h-screen relative">
+        <!-- Dynamic Content Injected Here by script.js -->
+        <div id="loading" class="flex h-screen items-center justify-center">
+            <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-[#00CEC8]"></div>
+        </div>
+    </div>
+
+    <!-- Main Application Logic -->
+    <script src="script.js"></script>
+</body>
 </html>
